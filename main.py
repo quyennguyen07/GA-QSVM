@@ -61,7 +61,12 @@ base_hyperparameter_space = {
     'prob_mutate': args.prob_mutate
 }
 
-dataset = {'digits': prepare_digits_data, 'wine': prepare_wine_data, 'cancer': prepare_cancer_data}
+dataset = {
+    'digits': prepare_digits_data,
+    'wine': prepare_wine_data,
+    'cancer': prepare_cancer_data,
+    'moons': prepare_moons_data
+}
 
 range_num_qubits = args.qubits
 data = dataset[args.data]
