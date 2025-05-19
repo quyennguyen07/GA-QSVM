@@ -49,7 +49,7 @@ def parse_args():
     parser.add_argument('--start-index', type=int, default=0,
                       help='Index to start from in the base combinations, ie. when the running fail, use this to continue the benchmarking')
     parser.add_argument('--data', type=str, default='wine',
-                      help='Dataset to use (digits or wine or cancer)')
+                    help='Dataset to use (digits, wine, cancer, or moons)')
     return parser.parse_args()
 
 # Define hyperparameter search space using ranges
